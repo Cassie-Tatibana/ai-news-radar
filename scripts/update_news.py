@@ -2235,8 +2235,45 @@ def load_archive(path: Path) -> dict[str, dict[str, Any]]:
     elif isinstance(items, dict):
         for item_id, it in items.items():
             if isinstance(it, dict):
-                it["id"] = item_id
-                out[item_id] = it
+                expanded = expand_archive_record(item_id, it)
+                expanded["id"] = item_id
+                out[item_id] = expanded
+    return out
+
+
+def expand_archive_record(item_id: str, record: dict[str, Any]) -> dict[str, Any]:
+    if "site_id" in record or "title" in record or "url" in record:
+        out = dict(record)
+        out["id"] = item_id
+        return out
+    return {
+        "id": item_id,
+        "site_id": record.get("s"),
+        "site_name": record.get("n"),
+        "source": record.get("o"),
+        "title": record.get("t"),
+        "url": record.get("u"),
+        "published_at": record.get("p"),
+        "first_seen_at": record.get("f"),
+        "last_seen_at": record.get("l"),
+    }
+
+
+def compact_archive_record(record: dict[str, Any]) -> dict[str, Any]:
+    published_at = record.get("published_at")
+    first_seen_at = record.get("first_seen_at")
+    out = {
+        "s": record.get("site_id"),
+        "n": record.get("site_name"),
+        "o": record.get("source"),
+        "t": record.get("title"),
+        "u": record.get("url"),
+        "l": record.get("last_seen_at"),
+    }
+    if published_at:
+        out["p"] = published_at
+    if first_seen_at and not published_at:
+        out["f"] = first_seen_at
     return out
 
 
@@ -3170,14 +3207,16 @@ def main() -> int:
         "items_all": latest_items_all_dedup,
     }
 
+    sorted_archive_records = sorted(
+        archive.values(),
+        key=lambda x: parse_iso(x.get("last_seen_at")) or datetime.min.replace(tzinfo=UTC),
+        reverse=True,
+    )
     archive_payload = {
         "generated_at": iso(now),
         "total_items": len(archive),
-        "items": sorted(
-            archive.values(),
-            key=lambda x: parse_iso(x.get("last_seen_at")) or datetime.min.replace(tzinfo=UTC),
-            reverse=True,
-        ),
+        "format": "compact_v1",
+        "items": {str(record["id"]): compact_archive_record(record) for record in sorted_archive_records},
     }
 
     status_payload = {
