@@ -34,11 +34,11 @@
         htmlUrl="https://simonwillison.net/"
       />
       <outline
-        text="Cursor Blog"
-        title="Cursor Blog"
+        text="TRAE Blog"
+        title="TRAE Blog"
         type="rss"
-        xmlUrl="https://cursor.com/blog/rss.xml"
-        htmlUrl="https://cursor.com/blog"
+        xmlUrl="https://www.trae.ai/blog/rss.xml"
+        htmlUrl="https://www.trae.ai/blog"
       />
     </outline>
     <outline text="Agents and MCP">

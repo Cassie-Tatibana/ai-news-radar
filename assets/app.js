@@ -47,6 +47,7 @@ const coverageStripEl = document.getElementById("coverageStrip");
 const SOURCE_KINDS = {
   official_ai: { label: "官方", tone: "official" },
   cursor: { label: "更新日志", tone: "official" },
+  trae: { label: "官方", tone: "official" },
   opmlrss: { label: "RSS", tone: "blogs" },
   aihot: { label: "聚合", tone: "aggregate" },
   xapi: { label: "X API", tone: "builders" },
@@ -135,6 +136,7 @@ function renderCoverageStrip(errorMessage = "") {
   const coverageCount = Number(state.sourceStatus?.fetched_raw_items || state.totalRaw || allCount || 0);
   const officialCount = Number(siteRow("official_ai")?.item_count || 0);
   const cursorCount = Number(siteRow("cursor")?.item_count || 0);
+  const traeCount = Number(siteRow("trae")?.item_count || 0);
   const aihotCount = Number(siteRow("aihot")?.item_count || 0);
   const totalSites = rows.length;
   const okSites = Number(state.sourceStatus?.successful_sites || 0);
@@ -151,8 +153,8 @@ function renderCoverageStrip(errorMessage = "") {
     ["今日覆盖池", `${fmtNumber(coverageCount)} 条`, allCount ? `全网抓取原始信号 · ${fmtNumber(allCount)} 条入池` : "全网抓取原始信号", "signal"],
     ["AI精选", `${fmtNumber(state.totalAi)} 条`, "24小时强相关信号", "signal"],
     ["官方源", `${fmtNumber(officialCount)} 条`, "OpenAI / Anthropic / GitHub / Hugging Face", "official"],
-    ["工具更新", `${fmtNumber(cursorCount)} 条`, "Cursor changelog + Codex / Skills 相关信号", "official"],
-    ["RSS/OPML扩展", opmlValue, opmlMeta, "private"],
+    ["工具更新", `${fmtNumber(cursorCount + traeCount)} 条`, "Cursor changelog + TRAE 官方更新", "official"],
+    ["RSS/OPML扩展", opmlValue, `${opmlMeta} · 含 TRAE Blog`, "private"],
     ["AI HOT", `${fmtNumber(aihotCount)} 条`, "补充热点聚合，增强发现", "signal"],
     ["高级源", "X / Mail", advancedMeta, "private"],
   ];

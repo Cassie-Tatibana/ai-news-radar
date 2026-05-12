@@ -101,7 +101,12 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
 )
 OFFICIAL_AI_MAX_AGE_DAYS = 45
 AIBREAKFAST_JINA_URL = "https://r.jina.ai/https://aibreakfast.beehiiv.com/"
-CURSOR_CHANGELOG_JINA_URL = "https://r.jina.ai/http://cursor.com/changelog"
+CURSOR_CHANGELOG_URL = "https://cursor.com/changelog"
+TRAE_BLOG_FEED: dict[str, str] = {
+    "title": "TRAE Blog",
+    "xml_url": "https://www.trae.ai/blog/rss.xml",
+    "html_url": "https://www.trae.ai/blog",
+}
 AIHOT_FEED_URL = "https://aihot.virxact.com/feed.xml"
 AIHOT_FALLBACK_FEED_URLS = (
     "https://aihot.virxact.com/rss.xml",
@@ -1175,9 +1180,10 @@ def fetch_feed_as_official_items(
     session: requests.Session,
     feed: dict[str, str],
     now: datetime,
+    *,
+    site_id: str = "official_ai",
+    site_name: str = "Official AI Updates",
 ) -> list[RawItem]:
-    site_id = "official_ai"
-    site_name = "Official AI Updates"
     feed_url = feed["xml_url"]
     feed_title = feed["title"]
 
@@ -1331,6 +1337,48 @@ def parse_cursor_changelog_items(markdown_text: str, now: datetime) -> list[RawI
     site_name = "Cursor Changelog"
     out: list[RawItem] = []
     seen: set[str] = set()
+
+    lower_text = (markdown_text or "").lower()
+    if "<html" in lower_text or ("<time" in lower_text and "<h1" in lower_text):
+        soup = BeautifulSoup(markdown_text, "html.parser")
+        for heading in soup.find_all("h1"):
+            clean_title = re.sub(r"\s+", " ", heading.get_text(" ", strip=True)).strip()
+            if not clean_title:
+                continue
+            card = heading.find_parent(lambda tag: tag.name in {"div", "article", "section"} and tag.find("time"))
+            if card is None:
+                continue
+            time_node = card.find("time")
+            published = parse_date_any(
+                (time_node.get("datetime") if time_node else None) or (time_node.get_text(" ", strip=True) if time_node else None),
+                now,
+            )
+            if not published:
+                continue
+            if now and published < now - timedelta(days=OFFICIAL_AI_MAX_AGE_DAYS):
+                continue
+            link_node = heading.find_parent("a", href=True) or heading.find("a", href=True) or card.find("a", href=True)
+            href = str(link_node.get("href") or "").strip() if link_node else ""
+            if not href or href in {"/changelog", "#main"} or "/changelog/page/" in href:
+                continue
+            url = urljoin(CURSOR_CHANGELOG_URL, href)
+            if url in seen:
+                continue
+            seen.add(url)
+            out.append(
+                RawItem(
+                    site_id=site_id,
+                    site_name=site_name,
+                    source="Cursor Changelog",
+                    title=maybe_fix_mojibake(clean_title),
+                    url=url,
+                    published_at=published,
+                    meta={"feed_home": CURSOR_CHANGELOG_URL},
+                )
+            )
+        if out:
+            return out
+
     date_pattern = re.compile(
         r"^\s*\[([^\]]*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},\s+\d{4})\]"
         r"\((https://cursor\.com/changelog/[^)]+)\).*?$",
@@ -1386,12 +1434,12 @@ def parse_cursor_changelog_items(markdown_text: str, now: datetime) -> list[RawI
 
 def fetch_cursor_changelog(session: requests.Session, now: datetime) -> list[RawItem]:
     resp = session.get(
-        CURSOR_CHANGELOG_JINA_URL,
+        CURSOR_CHANGELOG_URL,
         timeout=25,
         headers={
             "User-Agent": BROWSER_UA,
             "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-            "Accept": "text/plain, */*",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         },
     )
     resp.raise_for_status()
@@ -1399,6 +1447,16 @@ def fetch_cursor_changelog(session: requests.Session, now: datetime) -> list[Raw
     if not out:
         raise ValueError("No Cursor changelog items parsed")
     return out
+
+
+def fetch_trae_updates(session: requests.Session, now: datetime) -> list[RawItem]:
+    return fetch_feed_as_official_items(
+        session,
+        TRAE_BLOG_FEED,
+        now,
+        site_id="trae",
+        site_name="TRAE Official",
+    )
 
 
 def parse_follow_builders_items(feeds: dict[str, dict[str, Any]], now: datetime) -> list[RawItem]:
@@ -1913,6 +1971,7 @@ def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem]
     tasks = [
         ("official_ai", "Official AI Updates", fetch_official_ai_updates),
         ("cursor", "Cursor Changelog", fetch_cursor_changelog),
+        ("trae", "TRAE Official", fetch_trae_updates),
         ("aihot", "AI HOT", fetch_aihot),
     ]
 
@@ -2192,6 +2251,7 @@ def event_time(record: dict[str, Any]) -> datetime | None:
 AI_KEYWORDS = [
     "aigc",
     "cursor",
+    "trae",
     "llm",
     "gpt",
     "claude",

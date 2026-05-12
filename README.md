@@ -4,7 +4,7 @@
 
 ## 基于 GitHub Pages 的 24 小时 AI 资讯网站
 
-**聚焦 Cursor、Claude Code、Codex、MCP、Skills 与 AI 行业趋势。**
+**聚焦 Cursor、Claude Code、Codex、MCP、Skills、TRAE 与 AI 行业趋势。**
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-green?style=flat-square)](https://Cassie-Tatibana.github.io/ai-news-radar/)
 [![Actions](https://img.shields.io/github/actions/workflow/status/Cassie-Tatibana/ai-news-radar/update-news.yml?branch=master&label=update&style=flat-square)](https://github.com/Cassie-Tatibana/ai-news-radar/actions/workflows/update-news.yml)
@@ -30,7 +30,7 @@
 
 ## 默认信息源
 
-- AI 编程工具：OpenAI Blog、Anthropic News、Cursor Changelog、GitHub AI & ML、OpenAI Skills
+- AI 编程工具：OpenAI Blog、Anthropic News、Cursor Changelog、TRAE Blog、GitHub AI & ML、OpenAI Skills
 - Agents / MCP：Hugging Face Blog、LangChain Blog、Simon Willison
 - AI 行业趋势：TechCrunch AI、The Verge AI、AI HOT
 - 更新方式：GitHub Actions 每 30 分钟自动抓取并提交 `data/*.json`

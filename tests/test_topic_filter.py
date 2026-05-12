@@ -21,6 +21,7 @@ from scripts.update_news import (
     parse_anthropic_news_items,
     parse_follow_builders_items,
     parse_openai_codex_changelog_items,
+    fetch_trae_updates,
     redact_public_text,
 )
 
@@ -172,20 +173,54 @@ class TopicFilterTests(unittest.TestCase):
         self.assertEqual(items[0].url, "https://aibreakfast.beehiiv.com/p/anthropic-update-lands")
 
     def test_parse_cursor_changelog_items(self):
-        markdown = """
-        [Apr 15, 2026](https://cursor.com/changelog/04-15-26) · [Changelog](https://cursor.com/changelog)
-
-        # [Canvases](https://cursor.com/changelog/04-15-26)
-
-        [3.1 Apr 13, 2026](https://cursor.com/changelog/3-1) · [Changelog](https://cursor.com/changelog)
-
-        # [Tiled Layout and Upgraded Voice Input in the Agents Window](https://cursor.com/changelog/3-1)
+        html = """
+        <div class="grid-cursor">
+          <div>
+            <time datetime="2026-05-11T00:00:00.000Z">May 11, 2026</time>
+            <header><a href="/changelog/05-11-26"><h1>Bugbot Effort Levels</h1></a></header>
+          </div>
+        </div>
+        <div class="grid-cursor">
+          <div>
+            <time datetime="2026-05-07T00:00:00.000Z">May 7, 2026</time>
+            <header><a href="/changelog/05-07-26"><h1>PR Review, Build Plan in Parallel, and Split PRs</h1></a></header>
+          </div>
+        </div>
         """
-        items = parse_cursor_changelog_items(markdown, now=__import__("datetime").datetime.fromisoformat("2026-05-01T00:00:00+00:00"))
+        items = parse_cursor_changelog_items(html, now=__import__("datetime").datetime.fromisoformat("2026-05-20T00:00:00+00:00"))
         self.assertEqual(len(items), 2)
         self.assertEqual(items[0].site_id, "cursor")
         self.assertEqual(items[0].source, "Cursor Changelog")
-        self.assertEqual(items[0].url, "https://cursor.com/changelog/04-15-26")
+        self.assertEqual(items[0].url, "https://cursor.com/changelog/05-11-26")
+
+    def test_fetch_trae_updates_from_rss(self):
+        rss = b"""<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0'>
+  <channel>
+    <title>Trae Blog | RSS Feed</title>
+    <item>
+      <title>More Agentic</title>
+      <link>https://www.trae.ai/blog/product_thought_0526</link>
+      <pubDate>Mon, 26 May 2025 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>"""
+
+        class StubSession:
+            def get(self, url, timeout=None, headers=None):
+                class Resp:
+                    content = rss
+
+                    def raise_for_status(self):
+                        return None
+
+                return Resp()
+
+        items = fetch_trae_updates(StubSession(), now=__import__("datetime").datetime.fromisoformat("2025-06-01T00:00:00+00:00"))
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0].site_id, "trae")
+        self.assertEqual(items[0].source, "TRAE Blog")
+        self.assertEqual(items[0].url, "https://www.trae.ai/blog/product_thought_0526")
 
     def test_parse_aihot_feed_items(self):
         xml = """<?xml version='1.0' encoding='UTF-8'?>
