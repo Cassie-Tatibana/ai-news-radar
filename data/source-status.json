@@ -1,0 +1,217 @@
+{
+  "generated_at": "2026-05-12T03:28:04.414389Z",
+  "sites": [
+    {
+      "site_id": "official_ai",
+      "site_name": "Official AI Updates",
+      "ok": true,
+      "item_count": 163,
+      "duration_ms": 11551,
+      "error": null
+    },
+    {
+      "site_id": "cursor",
+      "site_name": "Cursor Changelog",
+      "ok": false,
+      "item_count": 0,
+      "duration_ms": 1229,
+      "error": "No Cursor changelog items parsed"
+    },
+    {
+      "site_id": "aihot",
+      "site_name": "AI HOT",
+      "ok": true,
+      "item_count": 50,
+      "duration_ms": 184,
+      "error": null
+    },
+    {
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "ok": true,
+      "partial_failures": 1,
+      "item_count": 1818,
+      "duration_ms": 12259,
+      "error": "1 feeds failed",
+      "feed_count": 9,
+      "effective_feed_count": 9,
+      "ok_feed_count": 8,
+      "failed_feed_count": 1,
+      "skipped_feed_count": 0,
+      "replaced_feed_count": 0
+    }
+  ],
+  "successful_sites": 3,
+  "failed_sites": [
+    "cursor"
+  ],
+  "zero_item_sites": [],
+  "fetched_raw_items": 2031,
+  "items_before_topic_filter": 6470,
+  "items_in_24h": 711,
+  "rss_opml": {
+    "enabled": true,
+    "path": "configured",
+    "feed_total": 9,
+    "effective_feed_total": 9,
+    "ok_feeds": 8,
+    "failed_feeds": [
+      "https://cursor.com/blog/rss.xml"
+    ],
+    "zero_item_feeds": [
+      "https://blog.langchain.dev/rss/"
+    ],
+    "skipped_feeds": [],
+    "replaced_feeds": [],
+    "feeds": [
+      {
+        "site_id": "opmlrss:6a2568a691",
+        "site_name": "OPML RSS",
+        "feed_title": "Cursor Blog",
+        "feed_url": "https://cursor.com/blog/rss.xml",
+        "effective_feed_url": "https://cursor.com/blog/rss.xml",
+        "ok": false,
+        "item_count": 0,
+        "duration_ms": 1433,
+        "error": "404 Client Error: Not Found for url: https://cursor.com/cn/blog/rss.xml",
+        "skipped": false,
+        "skip_reason": null,
+        "replaced": false
+      },
+      {
+        "site_id": "opmlrss:55a18b552e",
+        "site_name": "OPML RSS",
+        "feed_title": "GitHub AI & ML",
+        "feed_url": "https://github.blog/ai-and-ml/feed/",
+        "effective_feed_url": "https://github.blog/ai-and-ml/feed/",
+        "ok": true,
+        "item_count": 10,
+        "duration_ms": 879,
+        "error": null,
+        "skipped": false,
+        "skip_reason": null,
+        "replaced": false
+      },
+      {
+        "site_id": "opmlrss:33e649875b",
+        "site_name": "OPML RSS",
+        "feed_title": "Hugging Face Blog",
+        "feed_url": "https://huggingface.co/blog/feed.xml",
+        "effective_feed_url": "https://huggingface.co/blog/feed.xml",
+        "ok": true,
+        "item_count": 777,
+        "duration_ms": 1395,
+        "error": null,
+        "skipped": false,
+        "skip_reason": null,
+        "replaced": false
+      },
+      {
+        "site_id": "opmlrss:a8e499c84b",
+        "site_name": "OPML RSS",
+        "feed_title": "LangChain Blog",
+        "feed_url": "https://blog.langchain.dev/rss/",
+        "effective_feed_url": "https://blog.langchain.dev/rss/",
+        "ok": true,
+        "item_count": 0,
+        "duration_ms": 1960,
+        "error": null,
+        "skipped": false,
+        "skip_reason": null,
+        "replaced": false
+      },
+      {
+        "site_id": "opmlrss:b57039c37b",
+        "site_name": "OPML RSS",
+        "feed_title": "OpenAI Blog",
+        "feed_url": "https://openai.com/blog/rss.xml",
+        "effective_feed_url": "https://openai.com/blog/rss.xml",
+        "ok": true,
+        "item_count": 951,
+        "duration_ms": 1886,
+        "error": null,
+        "skipped": false,
+        "skip_reason": null,
+        "replaced": false
+      },
+      {
+        "site_id": "opmlrss:b7873d7bfa",
+        "site_name": "OPML RSS",
+        "feed_title": "OpenAI Skills",
+        "feed_url": "https://github.com/openai/skills/commits/main.atom",
+        "effective_feed_url": "https://github.com/openai/skills/commits/main.atom",
+        "ok": true,
+        "item_count": 20,
+        "duration_ms": 1193,
+        "error": null,
+        "skipped": false,
+        "skip_reason": null,
+        "replaced": false
+      },
+      {
+        "site_id": "opmlrss:d1c587ecba",
+        "site_name": "OPML RSS",
+        "feed_title": "Simon Willison",
+        "feed_url": "https://simonwillison.net/atom/everything/",
+        "effective_feed_url": "https://simonwillison.net/atom/everything/",
+        "ok": true,
+        "item_count": 30,
+        "duration_ms": 1333,
+        "error": null,
+        "skipped": false,
+        "skip_reason": null,
+        "replaced": false
+      },
+      {
+        "site_id": "opmlrss:84a591b781",
+        "site_name": "OPML RSS",
+        "feed_title": "TechCrunch AI",
+        "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "effective_feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "ok": true,
+        "item_count": 20,
+        "duration_ms": 824,
+        "error": null,
+        "skipped": false,
+        "skip_reason": null,
+        "replaced": false
+      },
+      {
+        "site_id": "opmlrss:f98a834a72",
+        "site_name": "OPML RSS",
+        "feed_title": "The Verge AI",
+        "feed_url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+        "effective_feed_url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+        "ok": true,
+        "item_count": 10,
+        "duration_ms": 1356,
+        "error": null,
+        "skipped": false,
+        "skip_reason": null,
+        "replaced": false
+      }
+    ]
+  },
+  "agentmail": {
+    "enabled": false,
+    "ok": null,
+    "item_count": 0,
+    "privacy": "metadata_only_no_body",
+    "published_by_default": false
+  },
+  "x_api": {
+    "enabled": false,
+    "ok": null,
+    "item_count": 0,
+    "privacy": "public_posts_metadata_only",
+    "published_by_default": false,
+    "official_free_read_quota": false,
+    "unit_cost_usd_per_post_read": 0.005,
+    "daily_post_limit": 20,
+    "max_results_per_run": 20,
+    "effective_result_cap": 20,
+    "estimated_max_cost_usd_per_run": 0.1,
+    "run_utc_hour": 0,
+    "generated_date_utc": "2026-05-12"
+  }
+}
