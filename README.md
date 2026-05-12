@@ -10,7 +10,7 @@
 [![Actions](https://img.shields.io/github/actions/workflow/status/Cassie-Tatibana/ai-news-radar/update-news.yml?branch=master&label=update&style=flat-square)](https://github.com/Cassie-Tatibana/ai-news-radar/actions/workflows/update-news.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
 
-[在线页面](https://Cassie-Tatibana.github.io/ai-news-radar/) · [English](README.en.md) · [伯乐Skill](skills/ai-news-radar/README.md) · [信息源策略](docs/SOURCE_COVERAGE.md)
+[在线页面](https://Cassie-Tatibana.github.io/ai-news-radar/) · [English](README.en.md) · [伯乐Skill](skills/ai-news-radar/README.md) · [使用模板](docs/guides/bole-skill-usage-template.md) · [信息源策略](docs/SOURCE_COVERAGE.md)
 
 </div>
 
@@ -146,6 +146,7 @@ python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml fee
 
 - `skills/ai-news-radar/README.md`
 - `skills/ai-news-radar/SKILL.md`
+- `docs/guides/bole-skill-usage-template.md`：给维护者直接复制给 AI 的中文模板
 
 新Agent接手验收时，推荐先读：
 
