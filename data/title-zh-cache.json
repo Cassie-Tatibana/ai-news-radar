@@ -14093,5 +14093,8 @@
   "Take your local GitHub sessions anywhere": "将本地 GitHub 会话带到任何地方",
   "Audit repository Copilot cloud agent configuration via the REST API": "通过 REST API 审核存储库 Copilot 云代理配置",
   "Remote control for Copilot CLI sessions now generally available on mobile, web, and VS Code": "Copilot CLI 会话的远程控制现在普遍可在移动设备、Web 和 VS Code 上使用",
-  "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments": "OpenAI 和戴尔合作将 Codex 引入混合和本地企业环境"
+  "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments": "OpenAI 和戴尔合作将 Codex 引入混合和本地企业环境",
+  "Anthropic has acquired the dev tools startup used by OpenAI, Google, and Cloudflare": "Anthropic 收购了 OpenAI、Google 和 Cloudflare 使用的开发工具初创公司",
+  "Musk v. Altman proved that AI is led by the wrong people": "马斯克诉奥特曼案证明人工智能是由错误的人领导的",
+  "Codex CLI 0.131.0": "法典 CLI 0.131.0"
 }
