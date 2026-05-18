@@ -14086,5 +14086,12 @@
   "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend": "PaddleOCR 3.5：使用 Transformers 后端运行 OCR 和文档解析任务",
   "Amazon’s new Alexa+ powered feature can generate podcast episodes": "亚马逊新的 Alexa+ 支持功能可以生成播客剧集",
   "The Open Agent Leaderboard": "开放代理排行榜",
-  "Composer 2.5": "作曲家2.5"
+  "Composer 2.5": "作曲家2.5",
+  "All of the updates from Elon Musk and Sam Altman’s battle over OpenAI": "埃隆·马斯克 (Elon Musk) 和萨姆·奥尔特曼 (Sam Altman) 围绕 OpenAI 之争的所有最新动态",
+  "Elon Musk loses his case against Sam Altman": "埃隆·马斯克 (Elon Musk) 败诉山姆·奥尔特曼 (Sam Altman)",
+  "Elon Musk has lost his lawsuit against Sam Altman and OpenAI": "埃隆·马斯克 (Elon Musk) 输掉了对萨姆·奥尔特曼 (Sam Altman) 和 OpenAI 的诉讼",
+  "Take your local GitHub sessions anywhere": "将本地 GitHub 会话带到任何地方",
+  "Audit repository Copilot cloud agent configuration via the REST API": "通过 REST API 审核存储库 Copilot 云代理配置",
+  "Remote control for Copilot CLI sessions now generally available on mobile, web, and VS Code": "Copilot CLI 会话的远程控制现在普遍可在移动设备、Web 和 VS Code 上使用",
+  "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments": "OpenAI 和戴尔合作将 Codex 引入混合和本地企业环境"
 }
