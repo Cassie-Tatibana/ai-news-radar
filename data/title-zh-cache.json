@@ -14100,5 +14100,6 @@
   "SandboxAQ brings its drug discovery models to Claude — no PhD in computing required": "SandboxAQ 将其药物发现模型带给 Claude——无需计算机博士学位",
   "Ask questions in context with Copilot on web": "在网络上通过 Copilot 提出相关问题",
   "One-click fixes for failing Actions with Copilot cloud agent": "使用 Copilot 云代理一键修复失败的操作",
-  "Copilot cloud agent: Fast, cost-efficient models for simple tasks": "Copilot 云代理：适用于简单任务的快速、经济高效的模型"
+  "Copilot cloud agent: Fast, cost-efficient models for simple tasks": "Copilot 云代理：适用于简单任务的快速、经济高效的模型",
+  "[codex] make yeet template-aware (#412)": "[codex] 让 Yeet 模板感知 (#412)"
 }
