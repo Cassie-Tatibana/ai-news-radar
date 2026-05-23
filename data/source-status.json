@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-22T23:37:03.337338Z",
+  "generated_at": "2026-05-23T02:14:42.071890Z",
   "sites": [
     {
       "site_id": "official_ai",
       "site_name": "Official AI Updates",
       "ok": true,
-      "item_count": 192,
-      "duration_ms": 6184,
+      "item_count": 191,
+      "duration_ms": 4523,
       "error": null
     },
     {
@@ -14,7 +14,7 @@
       "site_name": "Cursor Changelog",
       "ok": true,
       "item_count": 5,
-      "duration_ms": 303,
+      "duration_ms": 318,
       "error": null
     },
     {
@@ -22,7 +22,7 @@
       "site_name": "TRAE Official",
       "ok": true,
       "item_count": 1,
-      "duration_ms": 470,
+      "duration_ms": 237,
       "error": null
     },
     {
@@ -30,7 +30,7 @@
       "site_name": "AI HOT",
       "ok": true,
       "item_count": 50,
-      "duration_ms": 1748,
+      "duration_ms": 1628,
       "error": null
     },
     {
@@ -39,7 +39,7 @@
       "ok": true,
       "partial_failures": 0,
       "item_count": 1869,
-      "duration_ms": 3726,
+      "duration_ms": 4220,
       "error": null,
       "feed_count": 9,
       "effective_feed_count": 9,
@@ -52,9 +52,9 @@
   "successful_sites": 5,
   "failed_sites": [],
   "zero_item_sites": [],
-  "fetched_raw_items": 2117,
-  "items_before_topic_filter": 69,
-  "items_in_24h": 64,
+  "fetched_raw_items": 2116,
+  "items_before_topic_filter": 61,
+  "items_in_24h": 57,
   "rss_opml": {
     "enabled": true,
     "path": "configured",
@@ -76,7 +76,7 @@
         "effective_feed_url": "https://github.blog/ai-and-ml/feed/",
         "ok": true,
         "item_count": 10,
-        "duration_ms": 137,
+        "duration_ms": 622,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -90,7 +90,7 @@
         "effective_feed_url": "https://huggingface.co/blog/feed.xml",
         "ok": true,
         "item_count": 784,
-        "duration_ms": 317,
+        "duration_ms": 398,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -104,7 +104,7 @@
         "effective_feed_url": "https://blog.langchain.dev/rss/",
         "ok": true,
         "item_count": 0,
-        "duration_ms": 935,
+        "duration_ms": 603,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -118,7 +118,7 @@
         "effective_feed_url": "https://openai.com/blog/rss.xml",
         "ok": true,
         "item_count": 967,
-        "duration_ms": 844,
+        "duration_ms": 940,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -132,7 +132,7 @@
         "effective_feed_url": "https://github.com/openai/skills/commits/main.atom",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 332,
+        "duration_ms": 343,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -146,7 +146,7 @@
         "effective_feed_url": "https://simonwillison.net/atom/everything/",
         "ok": true,
         "item_count": 30,
-        "duration_ms": 418,
+        "duration_ms": 428,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -160,7 +160,7 @@
         "effective_feed_url": "https://www.trae.ai/blog/rss.xml",
         "ok": true,
         "item_count": 28,
-        "duration_ms": 303,
+        "duration_ms": 143,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -174,7 +174,7 @@
         "effective_feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 74,
+        "duration_ms": 277,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -188,7 +188,7 @@
         "effective_feed_url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
         "ok": true,
         "item_count": 10,
-        "duration_ms": 366,
+        "duration_ms": 466,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -216,6 +216,6 @@
     "effective_result_cap": 20,
     "estimated_max_cost_usd_per_run": 0.1,
     "run_utc_hour": 0,
-    "generated_date_utc": "2026-05-22"
+    "generated_date_utc": "2026-05-23"
   }
 }
