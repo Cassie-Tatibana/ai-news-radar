@@ -14272,5 +14272,7 @@
   "GitHub Classroom sign-ups are no longer available": "GitHub Classroom 注册不再可用",
   "Codex CLI 0.134.0": "法典 CLI 0.134.0",
   "GitHub Code Quality: Repository Enablement API": "GitHub 代码质量：存储库启用 API",
-  "Target Copilot models to organizations with model rules": "将 Copilot 模型定位到具有模型规则的组织"
+  "Target Copilot models to organizations with model rules": "将 Copilot 模型定位到具有模型规则的组织",
+  "DuckDuckGo installs are up 30% as users reject being ‘force-fed’ Google’s AI Search": "由于用户拒绝“强行灌输”谷歌人工智能搜索，DuckDuckGo 安装量增长了 30%",
+  "Copilot Memory has more controls for deletion, scope, and the Copilot CLI": "Copilot Memory 对删除、范围和 Copilot CLI 具有更多控制"
 }
