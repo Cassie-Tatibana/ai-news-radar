@@ -14332,5 +14332,7 @@
   "The internet is being rebuilt for machines": "正在为机器重建互联网",
   "CodeQL 2.25.5 improves query accuracy for GitHub Actions": "CodeQL 2.25.5 提高了 GitHub Actions 的查询准确性",
   "Asana acquires no-code agent-builder StackAI": "Asana 收购无代码代理构建器 StackAI",
-  "Anthropic raises $65 billion, nears $1T valuation ahead of IPO": "Anthropic 融资 650 亿美元，IPO 前估值接近 1T 美元"
+  "Anthropic raises $65 billion, nears $1T valuation ahead of IPO": "Anthropic 融资 650 亿美元，IPO 前估值接近 1T 美元",
+  "Hard budget limits now available for GitHub Advanced Security": "GitHub 高级安全性现可使用硬预算限制",
+  "How Endava builds an agentic organization with Codex": "Endava 如何利用 Codex 建立代理组织"
 }
