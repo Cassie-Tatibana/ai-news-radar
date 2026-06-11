@@ -14593,5 +14593,12 @@
   "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP": "PyTorch 中的分析（第 2 部分）：从 nn.Linear 到融合 MLP",
   "Incremental analysis for Go, C/C++, and CodeQL CLI": "Go、C/C++ 和 CodeQL CLI 的增量分析",
   "Pool’s new app turns your screenshots into something useful": "Pool 的新应用程序可以将您的屏幕截图变成有用的东西",
-  "DoorDash’s new AI chatbot lets you order with prompts and photos": "DoorDash 的全新 AI 聊天机器人可让您通过提示和照片进行订购"
+  "DoorDash’s new AI chatbot lets you order with prompts and photos": "DoorDash 的全新 AI 聊天机器人可让您通过提示和照片进行订购",
+  "AI usage report updates": "AI 使用报告更新",
+  "Amazon&#8217;s data centers used 2.5 billion gallons of water last year": "亚马逊数据中心去年使用了 25 亿加仑的水",
+  "Copilot CLI: Configure everything from one place with /settings": "Copilot CLI：使用 /settings 从一处配置所有内容",
+  "Deezer’s new tool can identify AI music from Spotify, Apple Music, and others": "Deezer 的新工具可以识别来自 Spotify、Apple Music 等的 AI 音乐",
+  "GitHub Agentic Workflows is now in public preview": "GitHub Agentic Workflows 现已推出公共预览版",
+  "Making secret scanning more trustworthy: Reducing false positives at scale": "让秘密扫描更值得信赖：大规模减少误报",
+  "Agentic workflows no longer need a personal access token": "代理工作流程不再需要个人访问令牌"
 }
