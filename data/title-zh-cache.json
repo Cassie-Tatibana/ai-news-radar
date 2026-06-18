@@ -14712,5 +14712,6 @@
   "How to turn off AI in your Google Docs": "如何关闭 Google 文档中的 AI",
   "GLM-5.2 is probably the most powerful text-only open weights LLM": "GLM-5.2 可能是最强大的纯文本开放权重 LLM",
   "Midjourney goes from generating cat images to full-body ultrasound scans": "中途从生成猫图像到全身超声波扫描",
-  "Codex CLI 0.141.0": "法典 CLI 0.141.0"
+  "Codex CLI 0.141.0": "法典 CLI 0.141.0",
+  "Generated release notes credit you for Copilot pull requests": "生成的发行说明归功于您的 Copilot 拉取请求"
 }
