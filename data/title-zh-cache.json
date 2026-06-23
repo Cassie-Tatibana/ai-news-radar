@@ -14803,5 +14803,8 @@
   "I automated my job (and it made me a better leader)": "我自动化了我的工作（这让我成为了更好的领导者）",
   "Something&#8217;s off with Midjourney’s pivot to body scanners": "Midjourney 向人体扫描仪转型的过程中出现了一些问题",
   "Deprecation of Python 3.9 for Dependabot": "Dependabot 弃用 Python 3.9",
-  "The Fitbit Air takes a smarter approach to the AI health dumpster fire": "Fitbit Air 采用更智能的方法来应对 AI 健康垃圾箱火灾"
+  "The Fitbit Air takes a smarter approach to the AI health dumpster fire": "Fitbit Air 采用更智能的方法来应对 AI 健康垃圾箱火灾",
+  "Fetch Code Quality findings via REST API": "通过 REST API 获取代码质量调查结果",
+  "Experimenting with the proposed Cross-Origin Storage API in Transformers.js": "在 Transformers.js 中试验建议的跨域存储 API",
+  "Introducing Claude Tag": "克劳德·塔格介绍"
 }
