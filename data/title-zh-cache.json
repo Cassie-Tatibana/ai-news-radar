@@ -14779,5 +14779,8 @@
   "Nvidia wants to cut data center water use, but that’s not the same as fixing AI’s water problem": "英伟达希望减少数据中心的用水量，但这与解决人工智能的用水问题不同",
   "AI is cursing renters with the promise of impossible homes": "人工智能正在诅咒租房者，承诺提供不可能的房屋",
   "Google DeepMind bets $75M on AI’s future in Hollywood with A24 deal": "谷歌 DeepMind 通过 A24 交易押注 7500 万美元押注好莱坞人工智能的未来",
-  "Codex-maxxing for long-running work": "Codex-maxxing 适用于长时间运行的工作"
+  "Codex-maxxing for long-running work": "Codex-maxxing 适用于长时间运行的工作",
+  "Prompt Injection as Role Confusion": "角色混淆导致提示注射",
+  "Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code": "使用 Claude Code 移植 Moebius 0.2B 图像修复模型以在浏览器中运行",
+  "Nvidia says its AI data center design runs hotter to use a lot less water": "英伟达表示，其人工智能数据中心设计运行温度更高，可减少用水量"
 }
