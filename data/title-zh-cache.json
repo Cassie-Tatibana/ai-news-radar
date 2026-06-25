@@ -14859,5 +14859,11 @@
   "More control over your GitHub-hosted runners": "更好地控制 GitHub 托管的运行器",
   "Codex Remote reaches general availability": "Codex Remote 全面上市",
   "Codex CLI 0.142.2": "法典 CLI 0.142.2",
-  "Codex CLI 0.142.1": "法典 CLI 0.142.1"
+  "Codex CLI 0.142.1": "法典 CLI 0.142.1",
+  "The White House is asking OpenAI to slow roll the release of its new model over safety concerns": "出于安全考虑，白宫要求 OpenAI 放慢新模型的发布速度",
+  "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks": "跨模型和任务评估 GitHub Copilot 代理工具的性能和效率",
+  "AI and Liability": "人工智能与责任",
+  "Copilot code review: Analysis depth and efficiency updates": "Copilot 代码审查：分析深度和效率更新",
+  "Enterprise-managed settings now support strictKnownMarketplaces in VS Code and GitHub Copilot CLI": "企业管理的设置现在支持 VS Code 和 GitHub Copilot CLI 中的 strictKnownMarketplaces",
+  "GitHub Copilot for Jira is now generally available": "GitHub Copilot for Jira 现已全面发布"
 }
