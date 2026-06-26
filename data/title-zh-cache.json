@@ -14865,5 +14865,6 @@
   "AI and Liability": "人工智能与责任",
   "Copilot code review: Analysis depth and efficiency updates": "Copilot 代码审查：分析深度和效率更新",
   "Enterprise-managed settings now support strictKnownMarketplaces in VS Code and GitHub Copilot CLI": "企业管理的设置现在支持 VS Code 和 GitHub Copilot CLI 中的 strictKnownMarketplaces",
-  "GitHub Copilot for Jira is now generally available": "GitHub Copilot for Jira 现已全面发布"
+  "GitHub Copilot for Jira is now generally available": "GitHub Copilot for Jira 现已全面发布",
+  "GitHub Desktop 3.6: Worktrees and deeper Copilot integration": "GitHub Desktop 3.6：工作树和更深入的 Copilot 集成"
 }
