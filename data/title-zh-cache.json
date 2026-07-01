@@ -14971,5 +14971,7 @@
   "Copilot vision is generally available": "副驾驶视野普遍可用",
   "Set AI credit session limits in Copilot CLI and SDK": "在 Copilot CLI 和 SDK 中设置 AI 信用会话限制",
   "Cloudflare’s new policy pushes AI companies to pay for publishers’ content": "Cloudflare新政策推动AI公司为出版商的内容付费",
-  "Kimi K2.7 Code is generally available in GitHub Copilot": "Kimi K2.7 代码已在 GitHub Copilot 中公开"
+  "Kimi K2.7 Code is generally available in GitHub Copilot": "Kimi K2.7 代码已在 GitHub Copilot 中公开",
+  "GitHub Models is being fully retired on July 30, 2026": "GitHub Models 将于 2026 年 7 月 30 日全面退役",
+  "New C++ language server config skill for Copilot CLI": "Copilot CLI 的新 C++ 语言服务器配置技能"
 }
