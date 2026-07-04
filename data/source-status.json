@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-03T23:06:12.966717Z",
+  "generated_at": "2026-07-04T01:05:13.480648Z",
   "sites": [
     {
       "site_id": "official_ai",
       "site_name": "Official AI Updates",
       "ok": true,
-      "item_count": 159,
-      "duration_ms": 2687,
+      "item_count": 156,
+      "duration_ms": 8761,
       "error": null
     },
     {
@@ -14,7 +14,7 @@
       "site_name": "Cursor Changelog",
       "ok": true,
       "item_count": 5,
-      "duration_ms": 634,
+      "duration_ms": 269,
       "error": null
     },
     {
@@ -22,7 +22,7 @@
       "site_name": "TRAE Official",
       "ok": true,
       "item_count": 2,
-      "duration_ms": 517,
+      "duration_ms": 258,
       "error": null
     },
     {
@@ -30,7 +30,7 @@
       "site_name": "AI HOT",
       "ok": false,
       "item_count": 0,
-      "duration_ms": 21111,
+      "duration_ms": 20533,
       "error": "HTTPSConnectionPool(host='aihot.virxact.com', port=443): Max retries exceeded with url: /feed/daily.xml (Caused by NewConnectionError(\"HTTPSConnection(host='aihot.virxact.com', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
     },
     {
@@ -39,7 +39,7 @@
       "ok": true,
       "partial_failures": 0,
       "item_count": 1962,
-      "duration_ms": 3939,
+      "duration_ms": 3445,
       "error": null,
       "feed_count": 9,
       "effective_feed_count": 9,
@@ -54,9 +54,9 @@
     "aihot"
   ],
   "zero_item_sites": [],
-  "fetched_raw_items": 2128,
-  "items_before_topic_filter": 28,
-  "items_in_24h": 25,
+  "fetched_raw_items": 2125,
+  "items_before_topic_filter": 22,
+  "items_in_24h": 19,
   "rss_opml": {
     "enabled": true,
     "path": "configured",
@@ -78,7 +78,7 @@
         "effective_feed_url": "https://github.blog/ai-and-ml/feed/",
         "ok": true,
         "item_count": 10,
-        "duration_ms": 382,
+        "duration_ms": 112,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -92,7 +92,7 @@
         "effective_feed_url": "https://huggingface.co/blog/feed.xml",
         "ok": true,
         "item_count": 814,
-        "duration_ms": 432,
+        "duration_ms": 416,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -106,7 +106,7 @@
         "effective_feed_url": "https://blog.langchain.dev/rss/",
         "ok": true,
         "item_count": 0,
-        "duration_ms": 919,
+        "duration_ms": 571,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -120,7 +120,7 @@
         "effective_feed_url": "https://openai.com/blog/rss.xml",
         "ok": true,
         "item_count": 1028,
-        "duration_ms": 828,
+        "duration_ms": 969,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -134,7 +134,7 @@
         "effective_feed_url": "https://github.com/openai/skills/commits/main.atom",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 398,
+        "duration_ms": 306,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -148,7 +148,7 @@
         "effective_feed_url": "https://simonwillison.net/atom/everything/",
         "ok": true,
         "item_count": 30,
-        "duration_ms": 150,
+        "duration_ms": 457,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -162,7 +162,7 @@
         "effective_feed_url": "https://www.trae.ai/blog/rss.xml",
         "ok": true,
         "item_count": 30,
-        "duration_ms": 596,
+        "duration_ms": 281,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -176,7 +176,7 @@
         "effective_feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 157,
+        "duration_ms": 45,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -190,7 +190,7 @@
         "effective_feed_url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
         "ok": true,
         "item_count": 10,
-        "duration_ms": 77,
+        "duration_ms": 288,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -218,6 +218,6 @@
     "effective_result_cap": 20,
     "estimated_max_cost_usd_per_run": 0.1,
     "run_utc_hour": 0,
-    "generated_date_utc": "2026-07-03"
+    "generated_date_utc": "2026-07-04"
   }
 }
