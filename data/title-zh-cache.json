@@ -15135,5 +15135,8 @@
   "Open source AI matters more than ever, according to Hugging Face’s Clem Delangue": "Hugging Face 的 Clem Delangue 表示，开源人工智能比以往任何时候都更重要",
   "Per-user states for multi-user budgets in the REST API": "REST API 中多用户预算的每用户状态",
   "Hugging Face’s CEO on why companies are done renting their AI": "Hugging Face 首席执行官解释为什么公司不再租用人工智能",
-  "Apple sues OpenAI over alleged trade secret theft": "苹果起诉 OpenAI 涉嫌窃取商业机密"
+  "Apple sues OpenAI over alleged trade secret theft": "苹果起诉 OpenAI 涉嫌窃取商业机密",
+  "Apple sues OpenAI for allegedly stealing hardware secrets": "苹果起诉 OpenAI 涉嫌窃取硬件机密",
+  "CodeQL 2.26.0 adds Kotlin 2.4.0 support and AI prompt injection detection": "CodeQL 2.26.0 添加了 Kotlin 2.4.0 支持和 AI 提示注入检测",
+  "Clearer names for secret scanning detector types": "秘密扫描探测器类型的更清晰名称"
 }
