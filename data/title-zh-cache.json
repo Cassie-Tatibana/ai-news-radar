@@ -15188,5 +15188,9 @@
   "Apple opens its new Siri AI to everyone with the iOS 27 public beta": "苹果通过 iOS 27 公开测试版向所有人开放新的 Siri AI",
   "Anthropic’s newest ad is creeping people out": "Anthropic 的最新广告令人毛骨悚然",
   "The founder of Hinge raised $18M to build a new AI dating service, Overtone": "Hinge 创始人筹集了 1800 万美元来打造新的人工智能约会服务 Overtone",
-  "Code scanning shows AI security detections on pull requests": "代码扫描显示对拉取请求的人工智能安全检测"
+  "Code scanning shows AI security detections on pull requests": "代码扫描显示对拉取请求的人工智能安全检测",
+  "OpenAI’s new flagship model deletes files on its own, people keep warning": "人们不断警告 OpenAI 新旗舰机型会自行删除文件",
+  "OpenAI may announce a ChatGPT smart speaker this year": "OpenAI 今年可能会推出 ChatGPT 智能音箱",
+  "SpaceXAI&#8217;s Grok programming tool was uploading its users&#8217; entire codebase to cloud storage": "SpaceXAI 的 Grok 编程工具正在将用户的整个代码库上传到云存储",
+  "Manage secret scanning custom patterns via REST API": "通过 REST API 管理秘密扫描自定义模式"
 }
