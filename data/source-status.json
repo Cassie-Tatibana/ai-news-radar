@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-20T08:20:59.704393Z",
+  "generated_at": "2026-07-20T11:19:24.997436Z",
   "sites": [
     {
       "site_id": "official_ai",
       "site_name": "Official AI Updates",
       "ok": true,
       "item_count": 146,
-      "duration_ms": 7368,
+      "duration_ms": 1905,
       "error": null
     },
     {
@@ -14,7 +14,7 @@
       "site_name": "Cursor Changelog",
       "ok": true,
       "item_count": 5,
-      "duration_ms": 348,
+      "duration_ms": 240,
       "error": null
     },
     {
@@ -22,7 +22,7 @@
       "site_name": "TRAE Official",
       "ok": true,
       "item_count": 0,
-      "duration_ms": 66,
+      "duration_ms": 243,
       "error": null
     },
     {
@@ -30,7 +30,7 @@
       "site_name": "AI HOT",
       "ok": true,
       "item_count": 50,
-      "duration_ms": 700,
+      "duration_ms": 540,
       "error": null
     },
     {
@@ -39,7 +39,7 @@
       "ok": true,
       "partial_failures": 0,
       "item_count": 1957,
-      "duration_ms": 3133,
+      "duration_ms": 2708,
       "error": null,
       "feed_count": 9,
       "effective_feed_count": 9,
@@ -55,8 +55,8 @@
     "trae"
   ],
   "fetched_raw_items": 2158,
-  "items_before_topic_filter": 15,
-  "items_in_24h": 14,
+  "items_before_topic_filter": 17,
+  "items_in_24h": 16,
   "rss_opml": {
     "enabled": true,
     "path": "configured",
@@ -79,7 +79,7 @@
         "effective_feed_url": "https://github.blog/ai-and-ml/feed/",
         "ok": true,
         "item_count": 10,
-        "duration_ms": 100,
+        "duration_ms": 102,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -93,7 +93,7 @@
         "effective_feed_url": "https://huggingface.co/blog/feed.xml",
         "ok": true,
         "item_count": 829,
-        "duration_ms": 468,
+        "duration_ms": 316,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -107,7 +107,7 @@
         "effective_feed_url": "https://blog.langchain.dev/rss/",
         "ok": true,
         "item_count": 0,
-        "duration_ms": 579,
+        "duration_ms": 508,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -121,7 +121,7 @@
         "effective_feed_url": "https://openai.com/blog/rss.xml",
         "ok": true,
         "item_count": 1039,
-        "duration_ms": 986,
+        "duration_ms": 817,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -135,7 +135,7 @@
         "effective_feed_url": "https://github.com/openai/skills/commits/main.atom",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 325,
+        "duration_ms": 345,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -149,7 +149,7 @@
         "effective_feed_url": "https://simonwillison.net/atom/everything/",
         "ok": true,
         "item_count": 30,
-        "duration_ms": 163,
+        "duration_ms": 362,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -163,7 +163,7 @@
         "effective_feed_url": "https://www.trae.ai/blog/rss.xml",
         "ok": true,
         "item_count": 0,
-        "duration_ms": 99,
+        "duration_ms": 116,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -177,7 +177,7 @@
         "effective_feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
         "ok": true,
         "item_count": 19,
-        "duration_ms": 170,
+        "duration_ms": 34,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -191,7 +191,7 @@
         "effective_feed_url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
         "ok": true,
         "item_count": 10,
-        "duration_ms": 243,
+        "duration_ms": 108,
         "error": null,
         "skipped": false,
         "skip_reason": null,
