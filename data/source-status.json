@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-01T20:08:07.205293Z",
+  "generated_at": "2026-08-01T21:22:16.293602Z",
   "sites": [
     {
       "site_id": "official_ai",
       "site_name": "Official AI Updates",
       "ok": true,
       "item_count": 149,
-      "duration_ms": 4562,
+      "duration_ms": 2711,
       "error": null
     },
     {
@@ -14,15 +14,15 @@
       "site_name": "Cursor Changelog",
       "ok": true,
       "item_count": 5,
-      "duration_ms": 688,
+      "duration_ms": 461,
       "error": null
     },
     {
       "site_id": "trae",
       "site_name": "TRAE Official",
       "ok": true,
-      "item_count": 2,
-      "duration_ms": 1405,
+      "item_count": 0,
+      "duration_ms": 477,
       "error": null
     },
     {
@@ -30,7 +30,7 @@
       "site_name": "AI HOT",
       "ok": true,
       "item_count": 50,
-      "duration_ms": 2149,
+      "duration_ms": 804,
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "site_name": "OPML RSS",
       "ok": true,
       "partial_failures": 0,
-      "item_count": 2060,
-      "duration_ms": 6540,
+      "item_count": 2029,
+      "duration_ms": 4129,
       "error": null,
       "feed_count": 9,
       "effective_feed_count": 9,
@@ -51,10 +51,12 @@
   ],
   "successful_sites": 5,
   "failed_sites": [],
-  "zero_item_sites": [],
-  "fetched_raw_items": 2266,
-  "items_before_topic_filter": 20,
-  "items_in_24h": 18,
+  "zero_item_sites": [
+    "trae"
+  ],
+  "fetched_raw_items": 2233,
+  "items_before_topic_filter": 18,
+  "items_in_24h": 15,
   "rss_opml": {
     "enabled": true,
     "path": "configured",
@@ -63,7 +65,8 @@
     "ok_feeds": 9,
     "failed_feeds": [],
     "zero_item_feeds": [
-      "https://blog.langchain.dev/rss/"
+      "https://blog.langchain.dev/rss/",
+      "https://www.trae.ai/blog/rss.xml"
     ],
     "skipped_feeds": [],
     "replaced_feeds": [],
@@ -76,7 +79,7 @@
         "effective_feed_url": "https://github.blog/ai-and-ml/feed/",
         "ok": true,
         "item_count": 10,
-        "duration_ms": 632,
+        "duration_ms": 336,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -90,7 +93,7 @@
         "effective_feed_url": "https://huggingface.co/blog/feed.xml",
         "ok": true,
         "item_count": 834,
-        "duration_ms": 504,
+        "duration_ms": 530,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -104,7 +107,7 @@
         "effective_feed_url": "https://blog.langchain.dev/rss/",
         "ok": true,
         "item_count": 0,
-        "duration_ms": 1481,
+        "duration_ms": 1076,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -118,7 +121,7 @@
         "effective_feed_url": "https://openai.com/blog/rss.xml",
         "ok": true,
         "item_count": 1105,
-        "duration_ms": 1036,
+        "duration_ms": 1083,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -132,7 +135,7 @@
         "effective_feed_url": "https://github.com/openai/skills/commits/main.atom",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 564,
+        "duration_ms": 448,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -146,7 +149,7 @@
         "effective_feed_url": "https://simonwillison.net/atom/everything/",
         "ok": true,
         "item_count": 30,
-        "duration_ms": 558,
+        "duration_ms": 182,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -159,8 +162,8 @@
         "feed_url": "https://www.trae.ai/blog/rss.xml",
         "effective_feed_url": "https://www.trae.ai/blog/rss.xml",
         "ok": true,
-        "item_count": 31,
-        "duration_ms": 1092,
+        "item_count": 0,
+        "duration_ms": 172,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -174,7 +177,7 @@
         "effective_feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 140,
+        "duration_ms": 108,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -188,7 +191,7 @@
         "effective_feed_url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
         "ok": true,
         "item_count": 10,
-        "duration_ms": 533,
+        "duration_ms": 194,
         "error": null,
         "skipped": false,
         "skip_reason": null,
